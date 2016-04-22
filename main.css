@@ -1,0 +1,249 @@
+/*
+Project Name: Relaxr Splash Page
+Client: Relaxr
+Author: Kyle Rago
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+/* Box Model Hack */
+
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
+}
+
+
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Open Sans;
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134, 141, 157);
+  background-size: cover;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/* Center the container */
+
+#container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+}
+
+header {
+  display: block;
+  background-image: url("header_bg.jpg") no-repeat center top rgb(134, 141, 157);
+  background-color: #cccccc;
+  padding: 20%;
+  margin: 0 auto;
+}
+
+header .logo{
+    font-size: 24px;
+    text-align: left;
+    font-weight: extrabold;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    color: white;
+}
+
+header .slogan{
+    font-size: 24px;
+    text-align: center;
+    font-weight: semibold;
+    position: relative;
+    bottom: 60px;
+    color: white;
+}
+
+header .get-it-now-button {
+  background-color: #f9e42e;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 40%;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-weight: extrabold;
+  position: relative;
+  bottom: 30px;
+  color: #033048;
+}
+
+.benefits {
+  display: in-line block;
+  background: #f0efef;
+  padding: 7%;
+  margin: 0 auto;
+}
+
+.benefits .title {
+   font-size: 20px;
+   text-align: left;
+   font-weight: semibold;
+   position: relative;
+   top: 5px;
+   left: 20px;
+   margin-right: 50%;
+   color: #606161;
+}
+
+.benefits .paragraph {
+   font-size: 13px;
+   text-align: left;
+   font-weight: light;
+   position: relative;
+   left: 20px;
+   margin-right: 50%;
+   color: #606161;
+}
+
+.benefits .list {
+   font-size: 13px;
+   text-align: left;
+   font-weight: light;
+   position: relative;
+   top: 5px;
+   left: 20px;
+   margin-right: 50%;
+   color: #606161;
+}
+
+.testimonial {
+  display: in-line block;
+  background-image: url("testimonial_bg.jpg") no-repeat center top rgb(134, 141, 157);
+  background-color: #cccccc;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.testimonial .quote {
+   font-size: 18px;
+   text-align: center;
+   font-weight: light italic;
+   position: relative;
+   margin-left: 20%;
+   margin-right: 20%;
+   color: #606161;
+}
+
+.testimonial .source {
+   font-size: 18px;
+   text-align: center;
+   font-weight: semibold;
+   position: relative;
+   bottom: 15px;
+   color: white;
+}
+
+.bottom-nav {
+  display: in-line block;
+  background: yellow;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.sign-up-button {
+  background-color: #033048;
+  font-size: 12px;
+  border-radius: 5px;
+  font-weight: extrabold;
+  width: 32%;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  display: in-line block;
+  background: #121212;
+  padding: 15%;
+  margin: 0 auto;
+}
+
+footer .footer-logo{
+    font-size: 24px;
+    text-align: center;
+    font-weight: extrabold;
+    position: relative;
+    bottom: 50px;
+    color: #f9e42e;
+}
+
+footer .image-social{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 15px;
+    height: 30px; 
+}
+
+footer .copyright{
+    font-size: 9px;
+    text-align: center;
+    font-weight: semibold;
+    position: relative;
+    top: 30px;
+    color: white;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+

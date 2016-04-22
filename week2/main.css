@@ -1,0 +1,53 @@
+.wrapper{
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.main-nav{
+	background-color: #200;
+	height: 200px;
+}
+
+.main-nav .top-nav{
+	background-color: #ffc;
+}
+
+.main-nav .top-nav ul > li{
+	display: inline-block;
+	padding: 0 10px;
+}
+
+.articles{
+	background-color: #500;
+	display: inline-block;
+	height: 500px;
+	width: 45%;
+}
+
+.sidebar{
+	background-color: #238;
+	display: inline-block;
+	height: 500px;
+	width: 45%;
+}
+
+.copyright{
+	background-color: #fcf;
+	height: 200px;
+}
+
+.fake{
+	background-image: url('assets/myimage.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top;
+}
+
+.fake-two{
+	background: #00ff00
+	url("smiley.gif")
+	no-repeat
+	fixed
+	center
+	cover;
+}
