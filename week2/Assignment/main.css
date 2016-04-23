@@ -83,7 +83,7 @@ body {
 
 header {
   display: block;
-  background-image: url(header_bg.jpg) no-repeat center top rgb(134, 141, 157);
+  background: url(header_bg.jpg) no-repeat center top rgb(134, 141, 157);
   /*I am also having some issues with background images appearing. At first I thought
   I wasn't getting the file structure correct, but I can't seem to get it to link
   even when the image is in the same folder*/
@@ -166,7 +166,7 @@ header .get-it-now-button {
 
 .testimonial {
   display: inline block;
-  background-image: url(testimonial_bg.jpg) no-repeat center top rgb(134, 141, 157);
+  background: url(testimonial_bg.jpg) no-repeat center top rgb(134, 141, 157);
   padding: 5%;
   margin: 0 auto;
 }
