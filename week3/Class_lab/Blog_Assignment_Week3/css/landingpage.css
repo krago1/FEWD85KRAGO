@@ -59,11 +59,11 @@ body {
   color: #000;
   font-size: 12px;
   line-height: 1.4;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open+Sans', sans-serif;
   /*having trouble getting 
   the google font to link thus none of the specific
   font family names are properly validating*/
-  background: url(header_bg.jpg) no-repeat center top rgb(134, 141, 157);
+  background: url(images/header_bg.jpg) no-repeat center top rgb(134, 141, 157);
   background-size: cover;
 }
 
@@ -83,7 +83,7 @@ body {
 
 header {
   display: block;
-  background: url(header_bg.jpg) no-repeat center top rgb(134, 141, 157);
+  background: url(images/header_bg.jpg) no-repeat center top rgb(134, 141, 157);
   /*I am also having some issues with background images appearing. At first I thought
   I wasn't getting the file structure correct, but I can't seem to get it to link
   even when the image is in the same folder*/
@@ -94,7 +94,7 @@ header {
 header .logo {
   font-size: 24px;
   text-align: left;
-  font-weight: 'extrabold';
+  font-weight: 800;
   position: absolute;
   top: 10px;
   left: 50px;
@@ -104,7 +104,7 @@ header .logo {
 header .slogan {
   font-size: 24px;
   text-align: center;
-  font-weight: 'semibold';
+  font-weight: 600;
   position: relative;
   bottom: 60px;
   color: white;
@@ -119,7 +119,7 @@ header .get-it-now-button {
   margin: 0 auto;
   display: block;
   text-align: center;
-  font-weight: 'extrabold';
+  font-weight: 800;
   position: relative;
   bottom: 30px;
   color: #033048;
@@ -135,7 +135,7 @@ header .get-it-now-button {
 .benefits .title {
   font-size: 20px;
   text-align: left;
-  font-weight: 'semibold';
+  font-weight: 600;
   position: relative;
   top: 5px;
   left: 20px;
@@ -146,7 +146,7 @@ header .get-it-now-button {
 .benefits .paragraph {
   font-size: 13px;
   text-align: left;
-  font-weight: 'light';
+  font-weight: 300;
   position: relative;
   left: 20px;
   margin-right: 50%;
@@ -156,7 +156,7 @@ header .get-it-now-button {
 .benefits .list {
   font-size: 13px;
   text-align: left;
-  font-weight: 'light';
+  font-weight: 300;
   position: relative;
   top: 5px;
   left: 20px;
@@ -166,7 +166,7 @@ header .get-it-now-button {
 
 .testimonial {
   display: inline-block;
-  background: url(testimonial_bg.jpg) no-repeat center top rgb(134, 141, 157);
+  background: url(images/testimonial_bg.jpg) no-repeat center top rgb(134, 141, 157);
   padding: 5%;
   margin: 0 auto;
 }
@@ -174,7 +174,7 @@ header .get-it-now-button {
 .testimonial .quote {
   font-size: 18px;
   text-align: center;
-  font-weight: 'light italic';
+  font-weight: 300 italic;
   position: relative;
   margin-left: 20%;
   margin-right: 20%;
@@ -184,7 +184,7 @@ header .get-it-now-button {
 .testimonial .source {
   font-size: 18px;
   text-align: center;
-  font-weight: 'semibold';
+  font-weight: 600;
   position: relative;
   bottom: 15px;
   color: white;
@@ -201,7 +201,7 @@ header .get-it-now-button {
   background-color: #033048;
   font-size: 12px;
   border-radius: 5px;
-  font-weight: 'extrabold';
+  font-weight: 800;
   width: 32%;
   height: 40px;
   margin: 0 auto;
@@ -220,7 +220,7 @@ footer {
 footer .footer-logo {
   font-size: 24px;
   text-align: center;
-  font-weight: 'extrabold';
+  font-weight: 800;
   position: relative;
   bottom: 50px;
   color: #f9e42e;
@@ -248,7 +248,7 @@ footer .social-facebook {
 footer .copyright {
   font-size: 9px;
   text-align: center;
-  font-weight: 'semibold';
+  font-weight: 600;
   position: relative;
   top: 30px;
   color: white;
