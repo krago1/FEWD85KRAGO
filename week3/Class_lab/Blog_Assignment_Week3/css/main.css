@@ -126,10 +126,6 @@ main {
   overflow: hidden;
 }
 
-image {
-  width: 700px;
-}
-
 .firstcharacter {
   float: left;
   color: #606161;
@@ -246,7 +242,7 @@ footer {
   background: #121212;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 425px;
+  padding-left: 448px;
   padding-right: 425px;
   margin: 0 auto;
 }
@@ -259,11 +255,20 @@ footer .footer-logo {
   color: #f9e42e;
 }
 
-footer .social {
+footer .twitter{
   display: inline-block;
   bottom: 15px;
   align: center;
   height: 30px;
+  float: left;
+}
+
+footer .facebook{
+  display: inline-block;
+  bottom: 15px;
+  align: center;
+  height: 30px;
+  float: right;
 }
 
 footer .copyright {
