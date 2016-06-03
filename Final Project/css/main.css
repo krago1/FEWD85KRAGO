@@ -1,0 +1,613 @@
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
+}
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#container {
+  width: 960px;
+  margin: auto;
+  height: 500px;
+  background: url(http://res.cloudinary.com/dppolxvop/image/upload/v1463940931/papier_xzi0x9.png) center 100%;
+}
+
+nav,
+header,
+h1,
+ul,
+li,
+a {
+  transition: all .5s ease-in-out;
+}
+
+header.large {
+  width: 960px;
+  display: inline-block;
+  background-color: rgba(148, 106, 62, .7);
+  padding-top: 1px;
+  padding-bottom: 8px;
+  padding-right: 61px;
+  vertical-align: top;
+  position: fixed;
+  z-index: 99;
+  overflow: hidden;
+}
+
+#logo.large {
+  width: 80px;
+  margin-left: 48%;
+  position: relative;
+}
+
+#logo.large2 {
+  display: none;
+}
+
+#nav.large {
+  list-style-type: none;
+}
+
+#nav-left1.large {
+  float: left;
+}
+
+#nav-left2.large {
+  float: left;
+}
+
+#nav-left3.large {
+  float: left;
+}
+
+#nav-right1.large {
+  float: right;
+}
+
+#nav-right2.large {
+  float: right;
+}
+
+#nav-right3.large {
+  float: right;
+}
+
+header.small {
+  width: 960px;
+  display: inline-block;
+  background-color: rgba(148, 106, 62, 1.0);
+  padding-bottom: 8px;
+  padding-right: 6px;
+  position: fixed;
+  z-index: 99;
+  overflow: hidden;
+}
+
+#logo2.small {
+  width: 40px;
+}
+
+#logo2.small2 {
+  display: none;
+}
+
+#nav.small {
+  list-style-type: none;
+  padding-left: 5px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+#nav-left1.small {
+  float: left;
+}
+
+#nav-left2.small {
+  float: left;
+}
+
+#nav-left3.small {
+  float: left;
+  padding-right: 60px;
+}
+
+#nav-right1.small {
+  float: right;
+}
+
+#nav-right2.small {
+  float: right;
+}
+
+#nav-right3.small {
+  float: right;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: #f9e42e;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+ul > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+header li {
+  color: white;
+  padding: 0 20px;
+  float: left;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bold;
+  color: #b83f3b;
+}
+
+main {
+  display: block;
+  background: url(http://res.cloudinary.com/dppolxvop/image/upload/v1463940931/papier_xzi0x9.png) center 100%;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  padding-left: 61px;
+  padding-right: 61px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.Home {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 100px;
+  padding-left: 61px;
+  padding-right: 61px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+}
+
+.Our-Story {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 50px;
+  padding-left: 61px;
+  padding-right: 61px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+}
+
+.Our-Story > p {
+  padding-bottom: 30px;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+}
+
+.Our-Story > .story-header-right {
+  float: right;
+  padding-right: 220px;
+}
+
+.Our-Story > .story-header-left {
+  float: left;
+  padding-left: 250px;
+}
+
+#story-image-left {
+  float: left;
+  width: 175px;
+  margin-right: 40px;
+}
+
+#story-image-right {
+  float: right;
+  width: 100px;
+  margin-left: 40px;
+}
+
+.Our-Story > .story-text-right {
+  float: right;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.Our-Story > .story-text-left {
+  float: left;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.Beer {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 50px;
+  padding-left: 61px;
+  padding-right: 61px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+}
+
+a > #beer-images1 {
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 15px;
+}
+
+a > #beer-images2 {
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 15px;
+}
+
+a > #beer-images3 {
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 15px;
+}
+
+a > #beer-images4 {
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 15px;
+}
+
+.Beer > .beer-description-text1 {
+  float: right;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: none;
+}
+
+.Beer > .beer-description-text1 > .beer-description-header {
+  padding-left: 160px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.Beer > .beer-description-text1 > .beer-abv {
+  float: right;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 110px;
+  padding-top: 30px;
+}
+
+.Beer > .beer-description-text2 {
+  float: right;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: none;
+}
+
+.Beer > .beer-description-text2 > .beer-description-header {
+  padding-left: 160px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.Beer > .beer-description-text2 > .beer-abv {
+  float: right;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 110px;
+  padding-top: 30px;
+}
+
+.Beer > .beer-description-text3 {
+  float: right;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: none;
+}
+
+.Beer > .beer-description-text3 > .beer-description-header {
+  padding-left: 160px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.Beer > .beer-description-text3 > .beer-abv {
+  float: right;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 110px;
+  padding-top: 30px;
+}
+
+.Beer > .beer-description-text4 {
+  float: right;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: none;
+}
+
+.Beer > .beer-description-text4 > .beer-description-header {
+  padding-left: 160px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.Beer > .beer-description-text4 > .beer-abv {
+  float: right;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 110px;
+  padding-top: 30px;
+}
+
+#beer-description-image {
+  float: left;
+  width: 90px;
+  margin-right: 70px;
+}
+
+.Wine {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 50px;
+  padding-left: 61px;
+  padding-right: 61px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+}
+
+#wine-images1 {
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 15px;
+}
+
+#wine-images2 {
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 15px;
+}
+
+#wine-images3 {
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 15px;
+}
+
+#wine-images4 {
+  width: 150px;
+  padding-left: 100px;
+  padding-top: 15px;
+}
+
+.Wine > .wine-description-text1 {
+  float: right;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: none;
+}
+
+.Wine > .wine-description-text1 > .wine-description-header {
+  padding-left: 160px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.Wine > .wine-description-text1 > .wine-abv {
+  float: right;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 110px;
+  padding-top: 30px;
+}
+
+.Wine > .wine-description-text2 {
+  float: right;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: none;
+}
+
+.Wine > .wine-description-text2 > .wine-description-header {
+  padding-left: 160px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.Wine > .wine-description-text2 > .wine-abv {
+  float: right;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 110px;
+  padding-top: 30px;
+}
+
+.Wine > .wine-description-text3 {
+  float: right;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: none;
+}
+
+.Wine > .wine-description-text3 > .wine-description-header {
+  padding-left: 160px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.Wine > .wine-description-text3 > .wine-abv {
+  float: right;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 110px;
+  padding-top: 30px;
+}
+
+.Wine > .wine-description-text4 {
+  float: right;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: none;
+}
+
+.Wine > .wine-description-text4 > .wine-description-header {
+  padding-left: 160px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.Wine > .wine-description-text4 > .wine-abv {
+  float: right;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 110px;
+  padding-top: 30px;
+}
+
+#wine-description-image {
+  float: left;
+  width: 75px;
+  margin-right: 70px;
+}
+
+.Gallery {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 50px;
+  padding-left: 61px;
+  padding-right: 61px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+}
+
+.Contact {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 50px;
+  padding-left: 61px;
+  padding-right: 61px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.Contact > h3 {
+  float: left;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.Contact > h4 {
+  text-align: left;
+  float: left;
+  padding-top: 50px;
+  margin-top: 0px;
+  position: absolute;
+  font-size: 14px;
+}
+
+.Contact > h5 {
+  text-align: left;
+  float: left;
+  padding-top: 20px;
+  margin-top: 80px;
+  position: absolute;
+  font-size: 14px;
+}
+
+#home-image {
+  padding-left: 7%;
+  position: relative;
+}
+
+#gallery-image {
+  padding-left: 7%;
+  position: relative;
+}
+
+p {
+  text-align: center;
+  font-size: 13px;
+}
+
+.bottom-nav {
+  display: inline block;
+  background: yellow;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+footer {
+  display: block;
+  background: #121212;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+footer .copyright {
+  display: inline-block;
+  padding-left: 20%;
+  bottom: 15px;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 'semibold';
+  top: 10px;
+  color: white;
+  margin: 0 auto;
+}
+
+#instagram {
+  margin-left: 15px;
+  width: 26px;
+}
+
+#facebook {
+  margin-left: 10px;
+  width: 10px;
+}
