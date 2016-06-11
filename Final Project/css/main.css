@@ -7,45 +7,238 @@
   /* IE */
 }
 
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+.ac-overlay {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 1);
+  z-index: 99998;
+  opacity: 0;
+  cursor: wait;
+}
+
+.ac-container {
+  box-sizing: border-box;
+  font-family: 'Bree Serif', serif;
+  width: 360px;
+  position: fixed;
+  padding: 20px 20px 30px 20px;
+  background: rgba(148, 106, 62, 1);
+  z-index: 99999;
+  opacity: 0;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px #000;
+  font-weight: normal;
+}
+
+.ac-container h2 {
+  box-sizing: border-box;
+  margin: 0 0 14px 0;
+  font-size: 26px;
+  color: black;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 11px;
+}
+
+.ac-container h3 {
+  box-sizing: border-box;
+  color: yellow;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 26px;
+}
+
+.ac-container p {
+  box-sizing: border-box;
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: black;
+  line-height: 20px;
+}
+
+.ac-container p strong {
+  color: yellow;
+}
+
+.ac-container select,
+.ac-container input {
+  box-sizing: border-box;
+  color: #555;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+}
+
+.ac-container input.day {
+  box-sizing: border-box;
+  width: 45px;
+  height: 28px;
+}
+
+.ac-container input.year {
+  box-sizing: border-box;
+  width: 70px;
+  height: 28px;
+}
+
+.ac-container select {
+  box-sizing: border-box;
+  height: 28px;
+  padding-left: 4px;
+}
+
+.ac-container button {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 4px 10px 4px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 84px;
+  background: #b83f3b;
+  color: #fff;
+  text-shadow: 1px 1px 0 #84A51D;
+}
+
+.ac-container button:hover {
+  box-sizing: border-box;
+  background: #fb534e;
+}
+
+.ac-container .errors {
+  box-sizing: border-box;
+  margin: 0 0 20px 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FF1F1F;
+}
+
+.ac-container .errors ul,
+.ac-container .errors li {
+  box-sizing: border-box;
+  padding: 0 0 3px 0;
+  margin: 0 0 0 0;
+  list-style: none;
+}
+
+.ac-container .errors li span {
+  box-sizing: border-box;
+  font-size: 9px;
+  background: #ebebeb;
+  border: 1px solid #ccc;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  display: inline-block;
+  color: #FF1F1F;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 5px;
+  line-height: 13px;
+  position: relative;
+  top: -2px;
+  text-shadow: 1px 1px 0 #fff;
+  font-family: arial;
+}
+
+.ac-container .fields {
+  box-sizing: border-box;
+  clear: both;
+  margin: 10px 0 10px 0;
+}
+
+@media (max-width: 500px) {
+  .ac-container {
+    box-sizing: border-box;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 1px;
+  }
+  .ac-container select,
+  .ac-container input.day,
+  .ac-container input.year {
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .ac-container button {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+}
+
 body {
   color: #000;
+  background: url(http://res.cloudinary.com/dppolxvop/image/upload/v1463940931/papier_xzi0x9.png) center 100%;
   font-size: 12px;
   line-height: 1.4;
+  margin: 0;
+  padding: 0;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 #container {
-  width: 960px;
+  width: 100%;
   margin: auto;
   height: 500px;
-  background: url(http://res.cloudinary.com/dppolxvop/image/upload/v1463940931/papier_xzi0x9.png) center 100%;
 }
 
-nav,
 header,
 h1,
 ul,
-li,
-a {
-  transition: all .5s ease-in-out;
+li {
+  transition: all .5s linear;
 }
 
 header.large {
-  width: 960px;
-  display: inline-block;
+  width: 100%;
+  display: block;
   background-color: rgba(148, 106, 62, .7);
   padding-top: 1px;
   padding-bottom: 8px;
-  padding-right: 61px;
   vertical-align: top;
   position: fixed;
   z-index: 99;
   overflow: hidden;
 }
 
+#navigation {
+  width: 960px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0 auto;
+}
+
 #logo.large {
   width: 80px;
-  margin-left: 48%;
+  margin-left: 45%;
   position: relative;
 }
 
@@ -55,6 +248,7 @@ header.large {
 
 #nav.large {
   list-style-type: none;
+  margin-right: 50px;
 }
 
 #nav-left1.large {
@@ -82,18 +276,17 @@ header.large {
 }
 
 header.small {
-  width: 960px;
-  display: inline-block;
+  width: 100%;
+  display: block;
   background-color: rgba(148, 106, 62, 1.0);
-  padding-bottom: 8px;
-  padding-right: 6px;
   position: fixed;
   z-index: 99;
   overflow: hidden;
 }
 
 #logo2.small {
-  width: 40px;
+  width: 50px;
+  display: inline-block;
 }
 
 #logo2.small2 {
@@ -117,7 +310,7 @@ header.small {
 
 #nav-left3.small {
   float: left;
-  padding-right: 60px;
+  padding-right: 50px;
 }
 
 #nav-right1.small {
@@ -161,7 +354,7 @@ h2 {
 
 main {
   display: block;
-  background: url(http://res.cloudinary.com/dppolxvop/image/upload/v1463940931/papier_xzi0x9.png) center 100%;
+  width: 960px;
   padding-top: 200px;
   padding-bottom: 100px;
   padding-left: 61px;
@@ -250,28 +443,45 @@ main {
   border-bottom-width: 1px;
 }
 
-a > #beer-images1 {
-  width: 150px;
-  padding-left: 100px;
-  padding-top: 15px;
+.Beer > p {
+  padding-bottom: 20px;
 }
 
-a > #beer-images2 {
-  width: 150px;
-  padding-left: 100px;
-  padding-top: 15px;
+#beer-image {
+  padding-left: 160px;
+  padding-top: 30px;
+  position: relative;
+  width: 550px;
+  display: inline;
 }
 
-a > #beer-images3 {
-  width: 150px;
-  padding-left: 100px;
-  padding-top: 15px;
+#beer-name1 {
+  margin-left: 50px;
+  margin-top: 50px;
+  text-decoration: none;
+  color: #b83f3b;
+  font-size: 20px;
 }
 
-a > #beer-images4 {
-  width: 150px;
-  padding-left: 100px;
-  padding-top: 15px;
+#beer-name2 {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #b83f3b;
+  font-size: 20px;
+}
+
+#beer-name3 {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #b83f3b;
+  font-size: 20px;
+}
+
+#beer-name4 {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #b83f3b;
+  font-size: 20px;
 }
 
 .Beer > .beer-description-text1 {
@@ -388,28 +598,44 @@ a > #beer-images4 {
   border-bottom-width: 1px;
 }
 
-#wine-images1 {
-  width: 150px;
-  padding-left: 100px;
-  padding-top: 15px;
+.Wine > p {
+  padding-bottom: 20px;
 }
 
-#wine-images2 {
-  width: 150px;
-  padding-left: 100px;
-  padding-top: 15px;
+#wine-image {
+  padding-left: 190px;
+  padding-top: 30px;
+  position: relative;
+  width: 525px;
+  display: inline;
 }
 
-#wine-images3 {
-  width: 150px;
-  padding-left: 100px;
-  padding-top: 15px;
+#wine-name1 {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #b83f3b;
+  font-size: 20px;
 }
 
-#wine-images4 {
-  width: 150px;
-  padding-left: 100px;
-  padding-top: 15px;
+#wine-name2 {
+  margin-left: 100px;
+  text-decoration: none;
+  color: #b83f3b;
+  font-size: 20px;
+}
+
+#wine-name3 {
+  margin-left: 100px;
+  text-decoration: none;
+  color: #b83f3b;
+  font-size: 20px;
+}
+
+#wine-name4 {
+  margin-left: 100px;
+  text-decoration: none;
+  color: #b83f3b;
+  font-size: 20px;
 }
 
 .Wine > .wine-description-text1 {
@@ -563,6 +789,7 @@ a > #beer-images4 {
 #home-image {
   padding-left: 7%;
   position: relative;
+  width: 650px;
 }
 
 #gallery-image {
@@ -592,7 +819,7 @@ footer {
 
 footer .copyright {
   display: inline-block;
-  padding-left: 20%;
+  padding-left: 26%;
   bottom: 15px;
   height: 30px;
   font-size: 13px;

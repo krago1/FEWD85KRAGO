@@ -10,32 +10,55 @@
   <!-- external CSS link -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      var minAge = $('select').val();
+      $('select').on('change', function() {
+        minAge = $(this).val();
+      });
+      $('button').on('click', function() {
+        sessionStorage.clear();
+        $.ageCheck({
+          minAge: minAge
+        });
+      });
+      $.ageCheck({
+        minAge: minAge
+      });
+    });
+  </script>
 
 
 </head>
 
 <body>
   <div id="container">
+    <div id="jump-home"></div>
     <header class="large">
+      <div id = "navigation">
       <h1>
       <img id="logo" class="large" src="http://res.cloudinary.com/dy424tagz/image/upload/v1463788942/Logo_h0ntey.jpg" alt="logo"></h1>
       <ul id=nav class="large">
-        <li id="nav-left1" class="large"><a href="#Home">Home</a></li>
-        <li id="nav-left2" class="large"><a href="#Our Story">Our Story</a></li>
-        <li id="nav-left3" class="large"><a href="#Beer">Beer</a></li>
-        <li id="nav-right1" class="large"><a href="#Contact">Contact</a></li>
-        <img id="logo2" class="small2" src="http://res.cloudinary.com/dy424tagz/image/upload/v1463788942/Logo_h0ntey.jpg" alt="logo">
-        <li id="nav-right2" class="large"><a href="#Gallery">Gallery</a></li>
-        <li id="nav-right3" class="large"><a href="#Wine">Wine</a></li>
+        <li id="nav-left1" class="large"><a href="#jump-home">Home</a></li>
+        <li id="nav-left2" class="large"><a href="#jump-our-story">Our Story</a></li>
+        <li id="nav-left3" class="large"><a href="#jump-beer">Beer</a></li><img id="logo2" class="small2" src="http://res.cloudinary.com/dy424tagz/image/upload/v1463788942/Logo_h0ntey.jpg" alt="logo">
+        <li id="nav-right1" class="large"><a href="#jump-contact">Contact</a></li>
+        <li id="nav-right2" class="large"><a href="#jump-gallery">Gallery</a></li>
+        <li id="nav-right3" class="large"><a href="#jump-wine">Wine</a></li>
       </ul>
+      </div>
     </header>
 
     <main>
       <section class="Home">
         <h2><a name = "Home">Welcome to the Brotherhood!</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus.</p>
-        <img id="home-image" src="http://res.cloudinary.com/dy424tagz/image/upload/v1463788949/Home_Page_Image_qlyeon.jpg" alt="home-image">
+        <img id="home-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464825297/Brotherhood_wg31od.jpg" alt="home-image">
+        <div id="jump-our-story"></div>
       </section>
+
       <section class="Our-Story">
         <h2><a name = "Our Story">Our Story</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.
@@ -54,53 +77,58 @@
           Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl. Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci,
           porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum.</div>
       </section>
+      <div id="jump-beer"></div>
       <section class="Beer">
-        <h2><a name = "Beer">Our Beer</a></h2>
+        <h2><a name = "Beer">Beer</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.
           Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum.</p>
-        <a href="#"><img id="beer-images1" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224219/Sam_Abrams_mfz4hr.png" alt="beer-images"></a>
-        <a href="#"><img id="beer-images2" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224219/Sam_Abrams_mfz4hr.png" alt="beer-images"></a>
-        <a href="#"><img id="beer-images3" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224219/Sam_Abrams_mfz4hr.png" alt="beer-images"></a>
-        <a href="#"><img id="beer-images4" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224219/Sam_Abrams_mfz4hr.png" alt="beer-images"></a>
+        <a href="#" id="beer-name1">Black IPA</a>
+        <a href="#" id="beer-name2">Saison</a>
+        <a href="#" id="beer-name3">Scottish Ale</a>
+        <a href="#" id="beer-name4">Chocolate Stout</a>
+        <img id="beer-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464825297/Brotherhood_wg31od.jpg" alt="beer-image">
 
 
         <div class="beer-description-text1">
-          <h3 class="beer-description-header">Sam Abrams</h3> <img id="beer-description-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224219/Sam_Abrams_mfz4hr.png" alt="beer-images"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum.
+          <h3 class="beer-description-header">Black IPA</h3> <img id="beer-description-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224219/Sam_Abrams_mfz4hr.png" alt="beer-images"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum.
           Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl. Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci,
           porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum.
           <div class="beer-abv">ABV: 4.2% | IBUs: 10 | CALORIES: 131</div>
         </div>
 
         <div class="beer-description-text2">
-          <h3 class="beer-description-header">Ginger Snapped</h3> <img id="beer-description-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224219/Sam_Abrams_mfz4hr.png" alt="beer-images"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum.
+          <h3 class="beer-description-header">Saison</h3> <img id="beer-description-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1465519593/Sais_Anos_vph2ov.jpg" alt="beer-images"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum.
           Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl. Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci,
           porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum.
           <div class="beer-abv">ABV: 4.2% | IBUs: 10 | CALORIES: 131</div>
         </div>
 
         <div class="beer-description-text3">
-          <h3 class="beer-description-header">Up Your Kilt</h3> <img id="beer-description-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224219/Sam_Abrams_mfz4hr.png" alt="beer-images"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum.
+          <h3 class="beer-description-header">Scottish Ale</h3> <img id="beer-description-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1465519610/Scottish_Ale_rk0m37.jpg" alt="beer-images"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum.
           Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl. Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci,
           porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum.
           <div class="beer-abv">ABV: 4.2% | IBUs: 10 | CALORIES: 131</div>
         </div>
 
         <div class="beer-description-text4">
-          <h3 class="beer-description-header">Black Dog</h3> <img id="beer-description-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224219/Sam_Abrams_mfz4hr.png" alt="beer-images"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum.
+          <h3 class="beer-description-header">Chocolate Stout</h3> <img id="beer-description-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1465519554/Black_Dog_vfh8bt.jpg" alt="beer-images"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum.
           Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl. Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci,
           porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum.
           <div class="beer-abv">ABV: 4.2% | IBUs: 10 | CALORIES: 131</div>
         </div>
+        <div id="jump-wine"></div>
 
       </section>
+
       <section class="Wine">
-        <h2><a name = "Wine">Our Wine</a></h2>
+        <h2><a name = "Wine">Wine</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.
           Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum.</p>
-        <a href="#"><img id="wine-images1" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224234/Wine_ovgvgm.jpg" alt="wine-images"></a>
-        <a href="#"><img id="wine-images2" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224234/Wine_ovgvgm.jpg" alt="wine-images"></a>
-        <a href="#"><img id="wine-images3" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224234/Wine_ovgvgm.jpg" alt="wine-images"></a>
-        <a href="#"><img id="wine-images4" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224234/Wine_ovgvgm.jpg" alt="wine-images"></a>
+        <a href="#" id="wine-name1">Merlot</a>
+        <a href="#" id="wine-name2">Chardonnay</a>
+        <a href="#" id="wine-name3">Pinot Noir</a>
+        <a href="#" id="wine-name4">Riesling</a>
+        <img id="wine-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1465517506/Wine_Collection_ipvyev.jpg" alt="wine-image">
 
         <div class="wine-description-text1">
           <h3 class="wine-description-header">Merlot</h3> <img id="wine-description-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464224234/Wine_ovgvgm.jpg" alt="wine-images"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed
@@ -129,11 +157,12 @@
           ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum.
           <div class="wine-abv">ABV: 4.2% | IBUs: 10 | CALORIES: 131</div>
         </div>
-
+        <div id="jump-gallery"></div>
       </section>
       <section class="Gallery">
         <h2><a name = "Gallery">Gallery</a></h2>
         <img id="gallery-image" src="http://res.cloudinary.com/dppolxvop/image/upload/v1464825215/Gallery_gpfwvr.png" alt="gallery-image">
+        <div id="jump-contact"></div>
       </section>
       <section class="Contact">
         <h2><a name = "Contact">Contact</a></h2>
@@ -145,7 +174,7 @@
         <script class="Map" src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
         <div style='overflow:hidden;height:220px;width:350px;float:right;'>
           <div id='gmap_canvas' style='height:220px;width:350px;'></div>
-          <div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div>
+          <div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small></div>
           <div><small><a href="https://termsandcondiitionssample.com">terms and conditions sample</a></small></div>
           <style>
             #gmap_canvas img {
@@ -155,7 +184,26 @@
           </style>
         </div>
         <script type='text/javascript'>
-          function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(40.719549461270944,-73.98568525751956),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.719549461270944,-73.98568525751956)});infowindow = new google.maps.InfoWindow({content:'<strong>Brotherhood Brewery</strong><br>New York NY<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+          function init_map() {
+            var myOptions = {
+              zoom: 10,
+              center: new google.maps.LatLng(40.719549461270944, -73.98568525751956),
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+            marker = new google.maps.Marker({
+              map: map,
+              position: new google.maps.LatLng(40.719549461270944, -73.98568525751956)
+            });
+            infowindow = new google.maps.InfoWindow({
+              content: '<strong>Brotherhood Brewery</strong><br>New York NY<br>'
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map, marker);
+            });
+            infowindow.open(map, marker);
+          }
+          google.maps.event.addDomListener(window, 'load', init_map);
         </script>
       </section>
     </main>
@@ -173,7 +221,6 @@
 
     </footer>
   </div>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/main.js"></script>
 
